@@ -59,21 +59,23 @@ main{
   align-items: center;
 }
 .btn-1{
-  width: 300px;
-  height: 40px;
-  margin: 10px;
+  width: 400px;
+  height: 70px;
+  margin: 5px;
   padding: 10px;
   color: white;
+  font-size: 25px;
   background: #ed1c24;
   border-radius: 100vh;
   border: none;
 }
 .btn-2{
-  width: 300px;
-  height: 40px;
-  margin: 10px;
+  width: 400px;
+  height: 70px;
+  margin: 5px;
   padding: 10px;
   color: white;
+  font-size: 25px;
   background: #5c73b7;
   border-radius: 100vh;
   border: none;
@@ -94,4 +96,111 @@ main{
   font-weight: bold;
 }
 
+/* メイン記事 */
+.one{
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.two{
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.essay{
+  width: 400px;
+}
+
+.essay-img{
+  height: 375px;
+  width: 375px;
+}
+
+.essay > h3{
+  font-size:35px;
+  font-weight: bolder;
+  background: linear-gradient(transparent 75%, yellow 25%);
+}
+
+/* クラス：キャッチフレーズ */
+.catchphrase{
+  width: 100%;
+  height: 600px;
+  background-image: url(./image/背景.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catchphrase > h1{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 0.3em;
+}
+
+.catchphrase > p{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* クラス：welcom */
+.welcome{
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome > h3{
+  margin: 15px 0px;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.welcome > button{
+  width: 300px;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  background: #ed1c24;
+  border-radius: 100vh;
+  border: none;
+}
+
+
+.last-img{
+  height: 180px;
+  width: 100%;
+  background-image: url(./image/last-img.jpg);
+  background-size: contain;
+}
+
+footer{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3f42;
+}
+
+small{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
