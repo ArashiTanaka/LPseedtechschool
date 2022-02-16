@@ -35,11 +35,20 @@ header{
 }
 
 .header-button > button{
+  padding: 5px;
   color: white;
   background: transparent;
   border: none;
   outline: none;
+  transform: 3s;
 }
+.header-button > button:hover{
+  border-radius: 100vh;
+  border: none;
+  background: white;
+  color: #92cb97;
+}
+
 @media (max-width: 780px){
   .header-button > button{
     font-size: 7px;
@@ -91,6 +100,7 @@ main{
   justify-content: flex-start;
   align-items: center;
 }
+
 .btn-1{
   width: 400px;
   height: 70px;
@@ -101,7 +111,12 @@ main{
   background: #ed1c24;
   border-radius: 100vh;
   border: none;
+  transform: 3s;
 }
+.btn-1:hover{
+  transform: scale(1.1);
+}
+
 .btn-2{
   width: 400px;
   height: 70px;
@@ -112,6 +127,10 @@ main{
   background: #5c73b7;
   border-radius: 100vh;
   border: none;
+  transform: 3s;
+}
+.btn-2:hover{
+  transform: scale(1.1);
 }
 @media (max-width: 780px) {
   .btn-1{
@@ -294,8 +313,11 @@ main{
   background: #ed1c24;
   border-radius: 100vh;
   border: none;
+  transform: 3s;
 }
-
+.welcome > button:hover{
+  transform: scale(1.1);
+}
 
 .last-img{
   height: 180px;
