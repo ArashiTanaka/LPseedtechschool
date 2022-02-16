@@ -5,7 +5,7 @@
 
 /* ヘッダー装飾 */
 header{
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: #3f3f42;
   display: flex;
@@ -16,28 +16,48 @@ header{
   top: 0;
   left: 0;
 }
+@media (max-width: 780px) {
+  header{
+    width: 100vw;
+    height: 30px;
+  }
+}
+
 .header-logo{
   width: 300px;
   height: 60px;
 }
+@media (max-width: 780px){
+  .header-logo{
+    width: 90px;
+    height: 30px;
+  }
+}
+
 .header-button > button{
   color: white;
   background: transparent;
   border: none;
   outline: none;
 }
+@media (max-width: 780px){
+  .header-button > button{
+    font-size: 7px;
+  }
+}
+
 
 /* メイン装飾 */
 main{
   height: 80%;
-  width: 100%;
+  width: 100vw;
   background-image: url("./image/22319717.jpg");
   background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
 }
 .desc{
-  width: 40%;
+  width: 40vw;
   height: 60%;
   margin-top: 60px;
   margin-left: 20%;
@@ -46,9 +66,22 @@ main{
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 780px) {
+  .desc > img{
+    width: 15em;
+  }
+}
 .p-1{
   font-size: 20px;
   text-align: left;
+}
+@media (max-width: 780px) {
+  .p-1{
+    font-size: 15px;
+  }
+  .p_br{
+    display: none;
+  }
 }
 
 /* メインボタン装飾 */
@@ -80,6 +113,20 @@ main{
   border-radius: 100vh;
   border: none;
 }
+@media (max-width: 780px) {
+  .btn-1{
+    width: 90vw;
+    font-size: 15px;
+    height: 35px;
+  }
+}
+@media (max-width: 780px) {
+  .btn-2{
+    width: 90vw;
+    font-size: 15px;
+    height: 35px;
+  }
+}
 
 /* テーマ */
 .thema{
@@ -95,6 +142,14 @@ main{
   font-size: 50px;
   font-weight: bold;
 }
+@media (max-width: 780px) {
+  .thema{
+    margin: 5px 0px;
+  }
+  .thema > p{
+    font-size: 30px;
+  }
+}
 
 /* メイン記事 */
 .one{
@@ -104,6 +159,14 @@ main{
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 780px) {
+  .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .two{
   margin: 40px 0px;
@@ -112,26 +175,57 @@ main{
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 780px) {
+  .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .essay{
   width: 400px;
+}
+@media (max-width: 780px) {
+  .essay{
+    width: 100vw;
+  }
 }
 
 .essay-img{
   height: 375px;
   width: 375px;
 }
+@media (max-width: 780px) {
+  .essay-img{
+    height: 200px;
+    width: 200px;
+  }
+}
+
 
 .essay > h3{
   font-size:35px;
   font-weight: bolder;
   background: linear-gradient(transparent 75%, yellow 25%);
 }
+@media (max-width: 780px) {
+  .essay > h3{
+    font-size: 30px;
+    text-align: center;
+  }
+  .essay > p{
+    width: 80vw;
+    margin: 20px auto;
+    line-height: 28px;
+  }
+}
 
 /* クラス：キャッチフレーズ */
 .catchphrase{
-  width: 100%;
-  height: 600px;
+  width: 100vw;
+  height: 650px;
   background-image: url(./image/背景.jpg);
   display: flex;
   flex-direction: column;
@@ -145,6 +239,13 @@ main{
   font-size: 50px;
   letter-spacing: 0.3em;
 }
+@media (max-width: 780px) {
+  .catchphrase > h1{
+    font-size: 40px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
 
 .catchphrase > p{
   text-align: center;
@@ -152,10 +253,16 @@ main{
   font-size: 20px;
   font-weight: bold;
 }
+@media (max-width: 780px) {
+  .catchphrase > p{
+    line-height: 40px;
+    margin: 0px 20x;
+  }
+}
 
 /* クラス：welcom */
 .welcome{
-  width: 100%;
+  width: 100vw;
   height: 270px;
   display: flex;
   flex-direction: column;
@@ -168,6 +275,13 @@ main{
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 0.2em;
+}
+@media (max-width: 780px) {
+  .welcome > h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 35px 35px;
+  }
 }
 
 .welcome > button{
@@ -191,7 +305,7 @@ main{
 }
 
 footer{
-  width: 100%;
+  width: 100vw;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -204,3 +318,4 @@ small{
   text-align: center;
   font-size: 15px;
 }
+
