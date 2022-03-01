@@ -24,13 +24,27 @@ header{
 }
 
 .header-logo{
+  display: block !important;
   width: 300px;
   height: 60px;
 }
 @media (max-width: 780px){
   .header-logo{
     width: 90px;
-    height: 30px;
+    height: 40px;
+  }
+}
+.header_logo_sp{
+  display: none !important;
+}
+@media only screen and (max-width: 780px){
+  .header-logo{
+    display: none !important;
+  }
+  .header_logo_sp{
+    display: block !important;
+    width: 90px;
+    height: 35px;
   }
 }
 
@@ -134,16 +148,18 @@ main{
 }
 @media (max-width: 780px) {
   .btn-1{
-    width: 90vw;
+    width: 250px;
     font-size: 15px;
     height: 35px;
+    text-align: center;
   }
 }
 @media (max-width: 780px) {
   .btn-2{
-    width: 90vw;
+    width: 250px;
     font-size: 15px;
     height: 35px;
+    text-align: center;
   }
 }
 
@@ -213,8 +229,8 @@ main{
 }
 
 .essay-img{
-  height: 375px;
-  width: 375px;
+  height: 400px;
+  width: 400px;
 }
 @media (max-width: 780px) {
   .essay-img{
@@ -260,9 +276,11 @@ main{
 }
 @media (max-width: 780px) {
   .catchphrase > h1{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 75px;
     margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
